@@ -8,5 +8,9 @@ describe("triangle", function() {
     expect(triangle(3, 3, 3)).to.eql("equilateral");
   });
 
+  it("returns isosceles if 2 sides are equal", function() {
+    expect(triangle(3, 3, 2)).to.eql("isosceles");
+  });
+
 
 });

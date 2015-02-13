@@ -12,5 +12,9 @@ describe("triangle", function() {
     expect(triangle(3, 3, 2)).to.eql("isosceles");
   });
 
+  it("returns scalene if no sides are equal", function() {
+    expect(triangle(2, 3, 4)).to.eql("scalene");
+  });
+
 
 });

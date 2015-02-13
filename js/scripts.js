@@ -7,6 +7,8 @@ var triangle = function(sideA, sideB, sideC) {
     return ("equilateral");
   } else if ((sideA == sideB || sideB == sideC || sideC == sideA) && (isATriangle == true)) {
     return ("isosceles");
+  } else if ((sideA != sideB) && (sideB != sideC) && (sideC != sideA) && (isATriangle == true)) {
+    return ("scalene");
   } else {
     return ("not a triangle");
   }

@@ -1,21 +1,13 @@
 var triangle = function(sideA, sideB, sideC) {
 
+  var isATriangle = (((sideA + sideB) > sideC) && ((sideB + sideC) > sideA) && ((sideA + sideC) > sideB))
+
+
   if ((sideA == sideB) && (sideB == sideC)) {
     return ("equilateral");
-  } else if ((sideA === sideB) && (sideB === sideC)) {
-    return ("isoceles");
+  } else if ((sideA == sideB || sideB == sideC || sideC == sideA) && (isATriangle == true)) {
+    return ("isosceles");
   } else {
     return ("not a triangle");
   }
 };
-
-
-
-
-// var isATriangle = function(sideA, sideB, sideC) {
-//   if (((sideA + sideB) > sideC) && ((sideB + sideC) > sideA) && ((sideA + sideC) > sideB)) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// };

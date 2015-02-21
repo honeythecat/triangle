@@ -1,6 +1,6 @@
 README
 
-##Leap Year!
+##TRIANGLE!
 by Heather Anderson
 
 A simple js app that lets a user input the lengths of the sides of a triangle and returns what type of triangle they have made: equilateral, isosceles, or scalene. It is almost like you're in high school geometry again, only without the awkwardness!
